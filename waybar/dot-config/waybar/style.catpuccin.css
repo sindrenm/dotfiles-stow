@@ -5,7 +5,6 @@
   font-size: 16px;
   min-width: 0;
   min-height: 0;
-  transition: all 0.3s ease-in-out;
 }
 
 #waybar {
@@ -17,6 +16,7 @@
 }
 
 #workspaces,
+#window,
 #pulseaudio,
 #clock,
 #tray,
@@ -38,6 +38,7 @@
 }
 
 #workspaces button {
+  transition: all 0.3s ease-in-out;
   background-color: @lavender;
   border: 0px;
   opacity: 0.5;
@@ -57,6 +58,10 @@
 
 #workspaces button:hover {
   background-color: @sapphire;
+}
+
+#waybar.empty #window {
+  opacity: 0;
 }
 
 #pulseaudio {
