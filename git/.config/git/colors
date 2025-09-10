@@ -1,0 +1,7 @@
+[color "diff"]
+  whitespace = red reverse
+
+[color]
+  ui = auto
+
+# vim: set ft=gitconfig:

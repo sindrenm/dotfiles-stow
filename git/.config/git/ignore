@@ -1,0 +1,11 @@
+# Direnv environment file
+.envrc
+
+# Obsidian files
+.obsidian/
+
+# Vim swap files
+*.swp
+
+# Conventional place to put Git worktrees
+/git-worktrees/
