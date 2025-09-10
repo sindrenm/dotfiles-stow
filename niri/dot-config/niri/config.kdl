@@ -182,5 +182,5 @@ binds {
   "Mod+Escape" allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
   // Show a confirmation message and quit niri.
-  "Ctrl+Alt+Delete" { quit; }
+  "Ctrl+Alt+Delete" { spawn "wlogout"; }
 }
