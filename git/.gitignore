@@ -1,2 +1,2 @@
-.config/git/allowed_signers
-.config/git/private
+dot-config/git/allowed_signers
+dot-config/git/private

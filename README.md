@@ -32,13 +32,13 @@ These instructions assume you are on an Arch Linux-based system.
 
    ```
    cd ~/.dotfiles
-   stow <package_name>
+   stow --dotfiles <package_name>
    ```
 
    For example, to install the Neovim dotfiles:
 
    ```
-   stow neovim
+   stow --dotfiles neovim
    ```
 
    If there are existing files at the target location, Stow will warn you of a
@@ -46,7 +46,7 @@ These instructions assume you are on an Arch Linux-based system.
    move them into the repository and then create the symlink.
 
    ```
-   stow --adopt neovim
+   stow --dotfiles --adopt neovim
    ```
 
    Note that `--adopt` will overwrite the contents in ~/.dotfiles with whatever
@@ -57,10 +57,15 @@ These instructions assume you are on an Arch Linux-based system.
    To symlink all packages at once, use a wildcard:
 
    ```
-   stow */
+   stow --dotfiles */
    ```
 
    Note that the trailing slash is important to ensure only directories are stowed.
+
+Note the use of `--dotfiles` in the `stow` commands above. This tells GNU Stow
+to rename files prefixed with “dot-” to dotfiles, e.g., “dot-config” would be
+renamed to “.config”. This lets us avoid having a repository full of hidden
+files and folders.
 
 ## Links
 
