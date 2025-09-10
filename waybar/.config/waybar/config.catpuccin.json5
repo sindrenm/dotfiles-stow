@@ -1,0 +1,13 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["niri/workspaces"],
+  "modules-right": ["pulseaudio", "clock", "tray", "custom/power"],
+  "include": [
+    "./modules/clock.json5",
+    "./modules/custom-power.json5",
+    "./modules/niri-workspaces.json5",
+    "./modules/pulseaudio.json5",
+    "./modules/tray.json5",
+  ],
+}
