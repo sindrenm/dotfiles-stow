@@ -12,3 +12,6 @@ pager = ":builtin"
 [signing]
 backend = "ssh"
 behavior = "own"
+
+[jjj.splash]
+skip = true
