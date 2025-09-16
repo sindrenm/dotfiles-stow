@@ -1,4 +1,4 @@
-vim.pack.add( { "https://github.com/echasnovski/mini.nvim" })
+vim.pack.add({ "https://github.com/echasnovski/mini.nvim" })
 
 require('mini.ai').setup()
 require('mini.align').setup()
@@ -19,3 +19,18 @@ require('mini.tabline').setup()
 require('mini.trailspace').setup()
 
 vim.notify = require('mini.notify').make_notify()
+
+local hipatterns = require('mini.hipatterns')
+
+hipatterns.setup({
+  highlighters = {
+    -- Highlwght standalone “FIXME”, “HACK”, “TODO”, “NOTE”
+    fwxme     = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
+    hack      = { pattern = '%f[%w]()HACK()%f[%W]', group = 'MiniHipatternsHack' },
+    todo      = { pattern = '%f[%w]()TODO()%f[%W]', group = 'MiniHipatternsTodo' },
+    note      = { pattern = '%f[%w]()NOTE()%f[%W]', group = 'MiniHipatternsNote' },
+
+    -- Highlight hex color strings (`#RRGGBB`) using that color
+    hex_color = hipatterns.gen_highlighter.hex_color(),
+  },
+})
