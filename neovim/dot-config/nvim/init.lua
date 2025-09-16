@@ -1,6 +1,7 @@
 require("config.globals")
 require("config.keymaps")
 require("config.options")
+require("plugins.blink-cmp")
 require("plugins.mini")
 require("plugins.nvim-lspconfig")
 require("plugins.nvim-treesitter")
