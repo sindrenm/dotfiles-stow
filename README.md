@@ -12,15 +12,16 @@ These instructions assume you are on an Arch Linux-based system.
 
 1. **Install GNU Stow:**
 
-   ```
+   ```sh
    sudo pacman -S stow
    ```
 
 2. **Clone the Repository:**
 
-   Clone this repository into a directory in your home folder. ~/.dotfiles is a common choice.
+   Clone this repository into a directory in your home folder. ~/.dotfiles is a
+   common choice.
 
-   ```
+   ```sh
    git clone <repository_url> ~/.dotfiles
    ```
 
@@ -30,22 +31,22 @@ These instructions assume you are on an Arch Linux-based system.
    a specific package. A package is a top-level directory in the dotfiles, e.g.,
    “neovim” or “btop”.
 
-   ```
+   ```sh
    cd ~/.dotfiles
    stow --dotfiles <package_name>
    ```
 
    For example, to install the Neovim dotfiles:
 
-   ```
+   ```sh
    stow --dotfiles neovim
    ```
 
    If there are existing files at the target location, Stow will warn you of a
-   conflict. You can either manually move the files or use the --adopt flag to
+   conflict. You can either manually move the files or use the `--adopt` flag to
    move them into the repository and then create the symlink.
 
-   ```
+   ```sh
    stow --dotfiles --adopt neovim
    ```
 
@@ -56,7 +57,7 @@ These instructions assume you are on an Arch Linux-based system.
 
    To symlink all packages at once, use a wildcard:
 
-   ```
+   ```sh
    stow --dotfiles */
    ```
 
