@@ -18,8 +18,6 @@ require('mini.surround').setup()
 require('mini.tabline').setup()
 require('mini.trailspace').setup()
 
-vim.notify = require('mini.notify').make_notify()
-
 local hipatterns = require('mini.hipatterns')
 
 hipatterns.setup({
