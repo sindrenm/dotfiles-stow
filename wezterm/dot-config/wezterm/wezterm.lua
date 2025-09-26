@@ -8,19 +8,19 @@ local config = {
 
   initial_cols = 150,
   initial_rows = 40,
-
-  window_decorations = "NONE",
-
-  window_frame = {
-    border_left_width = '2px',
-    border_right_width = '2px',
-    border_bottom_height = '2px',
-    border_top_height = '2px',
-    border_left_color = 'white',
-    border_right_color = 'white',
-    border_bottom_color = 'white',
-    border_top_color = 'white',
-  },
+  --
+  -- window_decorations = "NONE",
+  --
+  -- window_frame = {
+  --   border_left_width = '2px',
+  --   border_right_width = '2px',
+  --   border_bottom_height = '2px',
+  --   border_top_height = '2px',
+  --   border_left_color = 'white',
+  --   border_right_color = 'white',
+  --   border_bottom_color = 'white',
+  --   border_top_color = 'white',
+  -- },
 
   window_padding = {
     left = "12px",
