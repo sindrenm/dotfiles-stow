@@ -1,3 +1,5 @@
+use ~/.config/nushell/functions/from-interrupts.nu *
+
 # Output `jj bookmark list` as a nu table
 def "jj bms" [] {
   jj bookmark list | lines | parse "{name}: {change_id} {commit_id} {description}"
