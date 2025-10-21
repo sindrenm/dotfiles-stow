@@ -1,0 +1,50 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "8743384"
+    },
+    "bullets.vim": [],
+    "img-clip.nvim": {
+      "rev": "e7e29f0"
+    },
+    "mini.nvim": {
+      "rev": "d1a9158"
+    },
+    "noice.nvim": {
+      "rev": "d14d02c"
+    },
+    "nui.nvim": [],
+    "nvim-lspconfig": {
+      "rev": "a9b2fb5"
+    },
+    "nvim-notify": [],
+    "nvim-treesitter": {
+      "rev": "645f42e8",
+      "version": "'main'"
+    },
+    "oil.nvim": {
+      "rev": "7e1cd77"
+    },
+    "outline.nvim": [],
+    "render-markdown.nvim": {
+      "rev": "bfd67f1"
+    },
+    "spellfile.nvim": {
+      "rev": "1177ea2"
+    },
+    "twilight.nvim": {
+      "rev": "c2650dd"
+    },
+    "typst-preview.nvim": {
+      "rev": "285d040"
+    },
+    "vague.nvim": {
+      "rev": "5689afd"
+    },
+    "vim-jjdescription": [],
+    "vim-repeat": [],
+    "zen-mode.nvim": {
+      "rev": "438a59c"
+    }
+  }
+}
