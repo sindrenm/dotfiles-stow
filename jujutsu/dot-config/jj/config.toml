@@ -15,3 +15,6 @@ behavior = "own"
 
 [jjj.splash]
 skip = true
+
+[remotes.origin]
+auto-track-bookmarks = "glob:*"
