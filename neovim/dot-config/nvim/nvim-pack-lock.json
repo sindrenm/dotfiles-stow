@@ -1,50 +1,101 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "8743384"
+      "rev": "57d900e6982f63c7cde689aa06d8af76c8da083e",
+      "src": "https://github.com/saghen/blink.cmp"
     },
-    "bullets.vim": [],
+    "bullets.vim": {
+      "rev": "455fc88626b7b42d53a8cc29fedea2f7e476e5fe",
+      "src": "https://github.com/bullets-vim/bullets.vim"
+    },
+    "flash.nvim": {
+      "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
+      "src": "https://github.com/folke/flash.nvim"
+    },
     "img-clip.nvim": {
-      "rev": "e7e29f0"
+      "rev": "93fcf50924108262caec66b900077987dfcb7c7f",
+      "src": "https://github.com/hakonharnes/img-clip.nvim"
+    },
+    "markdown-preview.nvim": {
+      "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
+      "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
     "mini.nvim": {
-      "rev": "d1a9158"
+      "rev": "dca98843fab66d080779cd973e7139e258ff164c",
+      "src": "https://github.com/echasnovski/mini.nvim"
     },
     "noice.nvim": {
-      "rev": "d14d02c"
+      "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
+      "src": "https://github.com/folke/noice.nvim"
     },
-    "nui.nvim": [],
+    "nui.nvim": {
+      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
+    },
     "nvim-lspconfig": {
-      "rev": "a9b2fb5"
+      "rev": "9c923997123ff9071198ea3b594d4c1931fab169",
+      "src": "https://github.com/neovim/nvim-lspconfig"
     },
-    "nvim-notify": [],
+    "nvim-notify": {
+      "rev": "8701bece920b38ea289b457f902e2ad184131a5d",
+      "src": "https://github.com/rcarriga/nvim-notify"
+    },
     "nvim-treesitter": {
-      "rev": "645f42e8",
+      "rev": "d72fa25b545da316cae7e596263656eac7afc2af",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
-    "oil.nvim": {
-      "rev": "7e1cd77"
+    "nvim-treesitter-context": {
+      "rev": "64dd4cf3f6fd0ab17622c5ce15c91fc539c3f24a",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter-context"
     },
-    "outline.nvim": [],
+    "oil.nvim": {
+      "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "outline.nvim": {
+      "rev": "6b62f73a6bf317531d15a7ae1b724e85485d8148",
+      "src": "https://github.com/hedyhli/outline.nvim"
+    },
     "render-markdown.nvim": {
-      "rev": "bfd67f1"
+      "rev": "b2b135347e299ffbf7f4123fb7811899b0c9f4b8",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "snacks.nvim": {
+      "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
+      "src": "https://github.com/folke/snacks.nvim"
     },
     "spellfile.nvim": {
-      "rev": "1177ea2"
+      "rev": "1177ea2d09013ef4a3b4db6e2444b0b143d1a8dc",
+      "src": "https://github.com/cuducos/spellfile.nvim"
+    },
+    "trouble.nvim": {
+      "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
+      "src": "https://github.com/folke/trouble.nvim"
     },
     "twilight.nvim": {
-      "rev": "c2650dd"
+      "rev": "664e752f4a219801265cc3fc18782b457b58c1e1",
+      "src": "https://github.com/folke/twilight.nvim"
     },
     "typst-preview.nvim": {
-      "rev": "285d040"
+      "rev": "291972a39db85c5d2e76249748aba4206dfd3bc2",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
     },
     "vague.nvim": {
-      "rev": "5689afd"
+      "rev": "dba28050887c2810b5ebf9e0143b4e919bd55757",
+      "src": "https://github.com/vague2k/vague.nvim"
     },
-    "vim-jjdescription": [],
-    "vim-repeat": [],
+    "vim-jjdescription": {
+      "rev": "c99bff42e7afff356514ae5b3f225665bf10b57c",
+      "src": "https://github.com/avm99963/vim-jjdescription"
+    },
+    "vim-repeat": {
+      "rev": "65846025c15494983dafe5e3b46c8f88ab2e9635",
+      "src": "https://github.com/tpope/vim-repeat"
+    },
     "zen-mode.nvim": {
-      "rev": "438a59c"
+      "rev": "8564ce6d29ec7554eb9df578efa882d33b3c23a7",
+      "src": "https://github.com/folke/zen-mode.nvim"
     }
   }
 }
