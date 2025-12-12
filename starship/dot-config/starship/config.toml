@@ -1,8 +1,4 @@
-[java]
-disabled = true
+"$schema" = 'https://starship.rs/config-schema.json'
 
-[kotlin]
-disabled = true
-
-[gcloud]
-disabled = true
+add_newline = false
+format = "$directory$character"
