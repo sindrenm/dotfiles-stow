@@ -4,7 +4,7 @@ environment {
 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
 
 cursor {
   hide-when-typing
