@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "57d900e6982f63c7cde689aa06d8af76c8da083e",
+      "rev": "3033d278848129899f94843e12ebb83a31342faa",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bullets.vim": {
@@ -25,19 +25,19 @@
       "src": "https://github.com/echasnovski/mini.ai"
     },
     "mini.nvim": {
-      "rev": "6f11e41a137590e4a5f13624a2a9a845686e719f",
+      "rev": "9087880da9ed1e5b06a28b75b4424fd8218bd189",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "mini.operators": {
-      "rev": "59f5fdbaaed7cce160076e70926cb16faadea78c",
+      "rev": "6df2fd410afd55ebd87757345031fc0af0c95068",
       "src": "https://github.com/echasnovski/mini.operators"
     },
     "mini.pairs": {
-      "rev": "472ec50092a3314ec285d2db2baa48602d71fe93",
+      "rev": "d5a29b6254dad07757832db505ea5aeab9aad43a",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
     "mini.pick": {
-      "rev": "b4351399db5043a781a32699a1bde60b747f711f",
+      "rev": "6b7974543b17cf2e294993fc3d8545a342258232",
       "src": "https://github.com/echasnovski/mini.pick"
     },
     "mini.surround": {
@@ -53,7 +53,7 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "a2bd1cf7b0446a7414aaf373cea5e4ca804c9c69",
+      "rev": "0044d0987ef7e624d04141d0f90d0481fd3c3663",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
@@ -65,7 +65,7 @@
       "src": "https://github.com/LhKipp/nvim-nu"
     },
     "nvim-treesitter": {
-      "rev": "bfc6c995404def9b01055df90f016d1a3be17ce5",
+      "rev": "2979e048b356cfd32dc419d5803dc356b9832adf",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -82,7 +82,7 @@
       "src": "https://github.com/hedyhli/outline.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "b2b135347e299ffbf7f4123fb7811899b0c9f4b8",
+      "rev": "26097a4eb95b391d0308c1b77cce89b28bbc9916",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "snacks.nvim": {
