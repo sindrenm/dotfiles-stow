@@ -81,7 +81,7 @@ binds {
 
   "Mod+Shift+Slash" { show-hotkey-overlay; }
 
-  "Mod+Return" { spawn "ghostty"; }
+  "Mod+Return" { spawn "alacritty"; }
   "Mod+Space" { spawn "fuzzel"; }
   "Mod+Alt+L" { spawn "swaylock"; }
 
