@@ -4,7 +4,6 @@ vim.lsp.enable({
   "jsonls",
   "kotlin_lsp",
   "lua_ls",
-  "nil_ls",
   "qmlls",
   "rust_analyzer",
   "taplo",
