@@ -39,3 +39,4 @@ style = "Underline"
 
 [general]
 live_config_reload = true
+import = ["./generated-colors.toml"]

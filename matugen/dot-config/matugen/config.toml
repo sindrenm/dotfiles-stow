@@ -1,0 +1,8 @@
+[config.wallpaper]
+command = "awww"
+arguments = ["img", "--transition-type", "center"]
+set = true
+
+[templates.alacritty]
+input_path = './templates/alacritty.toml'
+output_path = '~/.config/alacritty/generated-colors.toml'
