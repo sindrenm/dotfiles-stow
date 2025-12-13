@@ -11,3 +11,8 @@ output_path = '~/.config/alacritty/generated-colors.toml'
 input_path = './templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 post_hook = 'pkill -SIGUSR2 btop'
+
+[templates.mako]
+input_path = './templates/mako'
+output_path = '~/.config/mako/generated-theme'
+post_hook = 'makoctl reload'

@@ -7,10 +7,7 @@ markup=1
 outer-margin=16
 padding=16
 
-background-color=#1d2021
-progress-color=#1d2021
-text-color=#fabd2f
-
-border-color=#fabd2f
 border-size=2
 border-radius=10
+
+include=~/.config/mako/generated-theme
