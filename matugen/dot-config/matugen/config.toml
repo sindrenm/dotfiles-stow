@@ -21,6 +21,11 @@ post_hook = 'pkill -SIGUSR2 cava'
 input_path = './templates/fuzzel.ini'
 output_path = '~/.config/fuzzel/generated-theme.ini'
 
+[templates.kitty]
+input_path = './templates/kitty.conf'
+output_path = '~/.config/kitty/generated-theme.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
 [templates.mako]
 input_path = './templates/mako'
 output_path = '~/.config/mako/generated-theme'
