@@ -3,8 +3,7 @@ environment {
 }
 
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "awww-daemon"
+spawn-sh-at-startup "dms run"
 
 cursor {
   hide-when-typing
