@@ -39,6 +39,19 @@ require('mini.icons').setup()
 require('mini.indentscope').setup()
 require('mini.jump').setup()
 
+local map = require('mini.map')
+map.setup({
+  integrations = {
+    map.gen_integration.builtin_search(),
+    map.gen_integration.diagnostic(),
+    map.gen_integration.diff(),
+  },
+
+  window = {
+    show_integration_count = false,
+  },
+})
+
 require('mini.move').setup({
   mappings = {
     left = "<C-h>",
