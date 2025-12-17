@@ -8,7 +8,21 @@ require('mini.files').setup()
 require('mini.git').setup()
 require('mini.icons').setup()
 require('mini.indentscope').setup()
-require('mini.move').setup()
+
+require('mini.move').setup({
+  mappings = {
+    left = "<C-h>",
+    down = "<C-j>",
+    up = "<C-k>",
+    right = "<C-l>",
+
+    line_left = "<C-h>",
+    line_down = "<C-j>",
+    line_up = "<C-k>",
+    line_right = "<C-l>",
+  },
+})
+
 require('mini.operators').setup()
 require('mini.pairs').setup()
 require('mini.pick').setup()
