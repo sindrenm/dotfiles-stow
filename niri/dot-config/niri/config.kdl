@@ -1,8 +1,3 @@
-environment {
-  DISPLAY ":0"
-}
-
-spawn-at-startup "xwayland-satellite"
 spawn-sh-at-startup "dms run"
 
 cursor {
