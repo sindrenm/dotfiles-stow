@@ -37,6 +37,7 @@ hipatterns.setup({
 
 require('mini.icons').setup()
 require('mini.indentscope').setup()
+require('mini.jump').setup()
 
 require('mini.move').setup({
   mappings = {
