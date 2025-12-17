@@ -3,6 +3,13 @@ vim.pack.add({ "https://github.com/echasnovski/mini.nvim" })
 require('mini.ai').setup()
 require('mini.align').setup()
 require('mini.bracketed').setup()
+
+require('mini.cmdline').setup({
+  autocomplete = {
+    enable = false,
+  },
+})
+
 require('mini.completion').setup()
 require('mini.files').setup()
 require('mini.git').setup()
