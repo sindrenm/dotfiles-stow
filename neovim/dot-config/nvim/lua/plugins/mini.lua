@@ -1,8 +1,6 @@
 vim.pack.add({ "https://github.com/echasnovski/mini.nvim" })
 
 require('mini.ai').setup()
-require('mini.align').setup()
-require('mini.bracketed').setup()
 
 require('mini.cmdline').setup({
   autocomplete = {
@@ -19,7 +17,6 @@ require('mini.diff').setup({
 })
 
 require('mini.files').setup()
-require('mini.git').setup()
 
 local hipatterns = require('mini.hipatterns')
 hipatterns.setup({
@@ -67,11 +64,6 @@ require('mini.move').setup({
 })
 
 require('mini.operators').setup()
-require('mini.pairs').setup()
 require('mini.pick').setup()
 require('mini.splitjoin').setup()
-require('mini.starter').setup()
-require('mini.statusline').setup()
 require('mini.surround').setup()
-require('mini.tabline').setup()
-require('mini.trailspace').setup()
