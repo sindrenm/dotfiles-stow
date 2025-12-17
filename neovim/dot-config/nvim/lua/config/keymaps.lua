@@ -1,4 +1,5 @@
 vim.keymap.set("n", "-", MiniFiles.open)
+vim.keymap.set("n", "<leader>do", MiniDiff.toggle_overlay)
 vim.keymap.set("n", "<leader>ds", vim.diagnostic.open_float)
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>f", "<CMD>Pick files<CR>")

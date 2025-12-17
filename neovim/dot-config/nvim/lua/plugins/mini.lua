@@ -11,6 +11,13 @@ require('mini.cmdline').setup({
 })
 
 require('mini.completion').setup()
+
+require('mini.diff').setup({
+  view = {
+    style = "number",
+  },
+})
+
 require('mini.files').setup()
 require('mini.git').setup()
 require('mini.icons').setup()
