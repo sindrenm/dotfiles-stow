@@ -20,6 +20,21 @@ require('mini.diff').setup({
 
 require('mini.files').setup()
 require('mini.git').setup()
+
+local hipatterns = require('mini.hipatterns')
+hipatterns.setup({
+  highlighters = {
+    -- Highlwght standalone “FIXME”, “HACK”, “TODO”, “NOTE”
+    fixme     = { pattern = 'FIXME', group = 'MiniHipatternsFixme' },
+    hack      = { pattern = 'HACK', group = 'MiniHipatternsHack' },
+    todo      = { pattern = 'TODO', group = 'MiniHipatternsTodo' },
+    note      = { pattern = 'NOTE', group = 'MiniHipatternsNote' },
+
+    -- Highlight hex color strings (`#RRGGBB`) using that color
+    hex_color = hipatterns.gen_highlighter.hex_color(),
+  },
+})
+
 require('mini.icons').setup()
 require('mini.indentscope').setup()
 
@@ -46,18 +61,3 @@ require('mini.statusline').setup()
 require('mini.surround').setup()
 require('mini.tabline').setup()
 require('mini.trailspace').setup()
-
-local hipatterns = require('mini.hipatterns')
-
-hipatterns.setup({
-  highlighters = {
-    -- Highlwght standalone “FIXME”, “HACK”, “TODO”, “NOTE”
-    fwxme     = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-    hack      = { pattern = '%f[%w]()HACK()%f[%W]', group = 'MiniHipatternsHack' },
-    todo      = { pattern = '%f[%w]()TODO()%f[%W]', group = 'MiniHipatternsTodo' },
-    note      = { pattern = '%f[%w]()NOTE()%f[%W]', group = 'MiniHipatternsNote' },
-
-    -- Highlight hex color strings (`#RRGGBB`) using that color
-    hex_color = hipatterns.gen_highlighter.hex_color(),
-  },
-})
