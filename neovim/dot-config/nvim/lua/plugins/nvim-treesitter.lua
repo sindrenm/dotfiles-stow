@@ -9,6 +9,22 @@ vim.pack.add({
   },
 })
 
+-- Automatically start treesitter for all supported languages
+vim.api.nvim_create_autocmd("FileType", {
+  callback = function(args)
+    local bufnr = args.buf
+    local lang = vim.bo[bufnr].filetype
+
+    -- Check if a parser actually exists for this language before starting.
+    -- This prevents errors on unsupported filetypes.
+    local ok, _ = pcall(vim.treesitter.get_parser, bufnr, lang)
+
+    if ok then
+      vim.treesitter.start(bufnr, lang)
+    end
+  end,
+})
+
 require("nvim-treesitter").install({
   "awk",
   "bash",
