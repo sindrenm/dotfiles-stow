@@ -1,6 +1,9 @@
 {
   "diagnostics": {
     "globals": [
+      "MiniDiff",
+      "MiniFiles",
+      "MiniMap",
       "vim"
     ]
   }
