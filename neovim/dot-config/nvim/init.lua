@@ -1,5 +1,6 @@
 require("plugins.blink-cmp")
 require("plugins.bullets")
+require("plugins.flash-nvim")
 require("plugins.img-clip")
 require("plugins.mini")
 require("plugins.nui")
