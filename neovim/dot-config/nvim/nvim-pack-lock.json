@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "3033d278848129899f94843e12ebb83a31342faa",
+      "rev": "e72fc4443f2f91e023d0edd168074ba16898e970",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bullets.vim": {
@@ -25,7 +25,7 @@
       "src": "https://github.com/echasnovski/mini.ai"
     },
     "mini.nvim": {
-      "rev": "9087880da9ed1e5b06a28b75b4424fd8218bd189",
+      "rev": "6bd3a01aaf7d248aea1b78aacdd5d44bffa002c1",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "mini.operators": {
@@ -53,7 +53,7 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "0044d0987ef7e624d04141d0f90d0481fd3c3663",
+      "rev": "c4f67bf85b01a57e3c130352c0a0e453ab8cd5b9",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
@@ -65,7 +65,7 @@
       "src": "https://github.com/LhKipp/nvim-nu"
     },
     "nvim-treesitter": {
-      "rev": "2979e048b356cfd32dc419d5803dc356b9832adf",
+      "rev": "4fc09bee78e91bf4ba471cdab4bf9dfa37fde51c",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -82,7 +82,7 @@
       "src": "https://github.com/hedyhli/outline.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "26097a4eb95b391d0308c1b77cce89b28bbc9916",
+      "rev": "07d088bf8bdadd159eb807b90eaee86a4778383f",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "snacks.nvim": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/chomosuke/typst-preview.nvim"
     },
     "vague.nvim": {
-      "rev": "dba28050887c2810b5ebf9e0143b4e919bd55757",
+      "rev": "ae752c8d43fb1a98dcbcefea5c9de750c25d873d",
       "src": "https://github.com/vague2k/vague.nvim"
     },
     "vim-jjdescription": {
