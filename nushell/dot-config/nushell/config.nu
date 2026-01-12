@@ -1,3 +1,4 @@
+use std/util "path add"
 use ~/.config/nushell/functions/from-interrupts.nu *
 
 # Output `jj bookmark list` as a nu table
@@ -19,3 +20,5 @@ carapace _carapace nushell | save -f ($nu.data-dir | path join "vendor/autoload/
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
 atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
+
+path add "~/.cargo/bin"
