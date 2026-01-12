@@ -1,4 +1,8 @@
-vim.keymap.set("n", "-", MiniFiles.open)
+local toggle_mini_files = function()
+  if not MiniFiles.close() then MiniFiles.open() end
+end
+
+vim.keymap.set("n", "-", toggle_mini_files)
 vim.keymap.set("n", "<leader>do", MiniDiff.toggle_overlay)
 vim.keymap.set("n", "<leader>mm", MiniMap.toggle)
 vim.keymap.set("n", "<leader>ds", vim.diagnostic.open_float)
