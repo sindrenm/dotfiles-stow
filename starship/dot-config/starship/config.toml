@@ -5,6 +5,21 @@ add_newline = true
 [cmd_duration]
 disabled = true
 
+[gradle]
+disabled = true
+
+[git_branch]
+disabled = true
+
+[git_commit]
+disabled = true
+
+[java]
+disabled = true
+
+[kotlin]
+disabled = true
+
 [custom.jj]
 command = "prompt"
 format = "$output"
