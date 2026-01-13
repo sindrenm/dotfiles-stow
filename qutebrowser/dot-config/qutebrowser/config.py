@@ -140,3 +140,9 @@ config.set('content.local_content_can_access_file_urls', False, 'file:///home/si
 #   - left
 #   - right
 c.tabs.position = 'left'
+
+c.url.searchengines = {
+    'DEFAULT': 'https://www.google.com/search?q={}',
+    'g':       'https://www.google.com/search?q={}',
+    'aw':      'https://wiki.archlinux.org/?search={}',
+}
