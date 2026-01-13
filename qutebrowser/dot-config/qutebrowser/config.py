@@ -70,4 +70,9 @@ c.url.searchengines = {
     'aw':      'https://wiki.archlinux.org/?search={}',
 }
 
-config.bind
+toggle_tab_bar = 'config-cycle tabs.show always never'
+toggle_status_bar = 'config-cycle statusbar.show always never'
+
+config.bind('xt', toggle_tab_bar)
+config.bind('xs', toggle_status_bar)
+config.bind('xx', f'{toggle_tab_bar};; {toggle_status_bar}')
