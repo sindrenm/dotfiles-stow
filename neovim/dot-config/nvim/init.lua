@@ -1,3 +1,5 @@
+require("config.globals")
+
 require("plugins.blink-cmp")
 require("plugins.bullets")
 require("plugins.flash-nvim")
@@ -17,6 +19,5 @@ require("plugins.vim-jjdescription")
 require("plugins.vim-repeat")
 require("plugins.zen-mode")
 
-require("config.globals")
 require("config.keymaps")
 require("config.options")
