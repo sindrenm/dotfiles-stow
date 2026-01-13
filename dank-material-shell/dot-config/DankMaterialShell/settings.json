@@ -305,6 +305,10 @@
           "enabled": true
         },
         {
+          "id": "clock",
+          "enabled": true
+        },
+        {
           "id": "dankPomodoroTimer",
           "enabled": true
         }
@@ -312,10 +316,6 @@
       "rightWidgets": [
         {
           "id": "music",
-          "enabled": true
-        },
-        {
-          "id": "clock",
           "enabled": true
         },
         {
