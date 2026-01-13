@@ -5,6 +5,7 @@ vim.lsp.enable({
   "kotlin_lsp",
   "lua_ls",
   "nushell",
+  "pylsp",
   "qmlls",
   "rust_analyzer",
   "taplo",
