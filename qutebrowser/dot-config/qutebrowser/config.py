@@ -70,6 +70,8 @@ c.url.searchengines = {
     'aw':      'https://wiki.archlinux.org/?search={}',
 }
 
+c.tabs.padding = { 'bottom': 5, 'left': 10, 'right': 10, 'top': 5 }
+
 toggle_tab_bar = 'config-cycle tabs.show always never'
 toggle_status_bar = 'config-cycle statusbar.show always never'
 
