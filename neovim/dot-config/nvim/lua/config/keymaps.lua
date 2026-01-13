@@ -14,4 +14,4 @@ vim.keymap.set("n", "<leader>pi", "<CMD>PasteImage<CR>")
 vim.keymap.set("n", "<leader>o", "<CMD>Outline<CR>")
 
 local flash = require("flash")
-vim.keymap.set({ "n", "x", "o" }, "<leader>s", flash.jump, { desc = "Flash Jump" })
+vim.keymap.set({ "n", "x", "o" }, "<leader>/", flash.jump, { desc = "Flash Jump" })
