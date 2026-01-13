@@ -13,6 +13,9 @@
 # Change the argument to True to still load settings configured via autoconfig.yml
 config.load_autoconfig(True)
 
+# Set user agent when signing in to Google, otherwise they complain that “the browser might not be secure”
+config.set('content.headers.user_agent', 'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0', 'https://accounts.google.com/*')
+
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
