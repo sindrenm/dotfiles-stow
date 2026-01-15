@@ -140,8 +140,7 @@ binds {
   "Mod+Period" { consume-or-expel-window-right; }
 
   "Mod+R" { switch-preset-column-width; }
-  "Mod+Shift+R" { switch-preset-window-height; }
-  "Mod+Ctrl+R" { reset-window-height; }
+  "Mod+Shift+R" { switch-preset-window-width-back; }
   "Mod+F" { maximize-column; }
   "Mod+Shift+F" { fullscreen-window; }
 
