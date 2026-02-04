@@ -31,14 +31,15 @@
     (workspaces)))
 
 (defwidget workspaces []
-  (box :class "module workspaces"
+  (box :class "workspaces"
        :orientation "h"
        :space-evenly false
        :spacing 5
     (for ws in niri_workspaces
-      (button :class "ws-button ${ws.is_active ? 'active' : ''}"
+      (button :class "${ws.is_active ? 'active' : ''}"
+              :geometry (geometry :height "10px")
               :onclick "niri msg action focus-workspace ${ws.id}"
-        "${ws.idx}"))))
+        ))))
 
 (defwidget right []
   (box :orientation "h"
