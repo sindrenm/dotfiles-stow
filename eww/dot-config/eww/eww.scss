@@ -1,0 +1,22 @@
+@import "colors";
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", monospace; // Change to your font
+}
+
+.bar-window {
+  background-color: transparent;
+  color: $text;
+}
+
+.bar-container {
+  padding: 0 10px;
+}
+
+.module {
+  background-color: $module-background;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 5px;
+}
