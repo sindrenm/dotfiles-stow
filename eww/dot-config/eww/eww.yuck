@@ -1,3 +1,6 @@
+(deflisten niri_workspaces :initial "[]"
+  "scripts/niri-workspaces/target/release/niri-workspaces")
+
 (defwindow bar
   :monitor 0
   :geometry (geometry :x "16px"
@@ -25,7 +28,17 @@
   (box :orientation "h"
        :space-evenly false
        :halign "center"
-    (box :class "module" "Niri Workspaces")))
+    (workspaces)))
+
+(defwidget workspaces []
+  (box :class "module workspaces"
+       :orientation "h"
+       :space-evenly false
+       :spacing 5
+    (for ws in niri_workspaces
+      (button :class "ws-button ${ws.is_active ? 'active' : ''}"
+              :onclick "niri msg action focus-workspace ${ws.id}"
+        "${ws.idx}"))))
 
 (defwidget right []
   (box :orientation "h"
