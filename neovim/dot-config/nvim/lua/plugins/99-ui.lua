@@ -1,8 +1,11 @@
-local indentBlankLine = require("ibl")
-local icons = require("mini.icons")
 local hipatterns = require("mini.hipatterns")
+local icons = require("mini.icons")
+local indentBlankLine = require("ibl")
+local kittyScrollback = require("kitty-scrollback")
 
 vim.cmd.colorscheme "catppuccin"
+
+kittyScrollback.setup()
 
 indentBlankLine.setup()
 

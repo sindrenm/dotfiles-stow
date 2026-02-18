@@ -49,6 +49,10 @@
       "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
+    "kitty-scrollback.nvim": {
+      "rev": "5574df779fbe03205a08af4d9154279ff491be75",
+      "src": "https://github.com/mikesmithgh/kitty-scrollback.nvim"
+    },
     "lsp_signature.nvim": {
       "rev": "0efb088dce050d38a3608ee69f80f2a62cf9849c",
       "src": "https://github.com/ray-x/lsp_signature.nvim"
@@ -216,7 +220,7 @@
       "src": "https://github.com/folke/which-key.nvim"
     },
     "yazi.nvim": {
-      "rev": "331cadf187bd0c0676904b9e1cd1069cc00279bd",
+      "rev": "7e35f0090a6d4b2c05301c10a05cb36ea18c7091",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     },
     "zen-mode.nvim": {

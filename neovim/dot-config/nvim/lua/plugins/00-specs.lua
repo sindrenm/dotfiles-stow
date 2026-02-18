@@ -18,6 +18,7 @@ vim.pack.add({
   { src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
   { src = "https://github.com/m4xshen/smartcolumn.nvim" },
   { src = "https://github.com/mfussenegger/nvim-dap" },
+  { src = "https://github.com/mikesmithgh/kitty-scrollback.nvim" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/nvim-neotest/nvim-nio" },
