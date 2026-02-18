@@ -1,4 +1,5 @@
 vim.pack.add({
+  { src = "https://github.com/LionyxML/gitlineage.nvim" },
   { src = "https://github.com/MunifTanjim/nui.nvim" },
   { src = "https://github.com/OXY2DEV/markview.nvim" },
   { src = "https://github.com/akinsho/toggleterm.nvim" },
@@ -31,4 +32,5 @@ vim.pack.add({
   { src = "https://github.com/ray-x/lsp_signature.nvim" },
   { src = "https://github.com/rcarriga/nvim-notify" },
   { src = "https://github.com/saghen/blink.cmp",                            version = "v1.9.1" },
+  { src = "https://github.com/sindrets/diffview.nvim" },
 })
