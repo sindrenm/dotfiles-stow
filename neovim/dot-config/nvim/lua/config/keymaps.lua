@@ -1,6 +1,7 @@
 local dap = require("dap")
 local files = require("mini.files")
 local flash = require("flash")
+local smartSplits = require("smart-splits")
 local telescope = require("telescope.builtin")
 local whichKey = require("which-key")
 
@@ -8,6 +9,13 @@ whichKey.setup({ preset = "modern" });
 
 whichKey.add({
   { "-", mode = "n", files.open, desc = "Open file picker" },
+})
+
+whichKey.add({
+  { "<A-h>", mode = "n", smartSplits.move_cursor_left },
+  { "<A-j>", mode = "n", smartSplits.move_cursor_down },
+  { "<A-k>", mode = "n", smartSplits.move_cursor_up },
+  { "<A-l>", mode = "n", smartSplits.move_cursor_right },
 })
 
 whichKey.add({

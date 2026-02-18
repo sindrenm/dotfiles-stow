@@ -19,6 +19,7 @@ vim.pack.add({
   { src = "https://github.com/m4xshen/smartcolumn.nvim" },
   { src = "https://github.com/mfussenegger/nvim-dap" },
   { src = "https://github.com/mikesmithgh/kitty-scrollback.nvim" },
+  { src = "https://github.com/mrjones2014/smart-splits.nvim" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/nvim-neotest/nvim-nio" },

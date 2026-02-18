@@ -1,4 +1,7 @@
 dank-tabs.conf
 dank-theme.conf
 kitty-scrollback-nvim.conf
+neighboring_window.py
+relative_resize.py
 sessions/
+split_window.py
