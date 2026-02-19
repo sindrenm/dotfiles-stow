@@ -1,5 +1,6 @@
 vim.lsp.enable({
   "hls",
+  "hyprls",
   "jsonls",
   "kotlin_lsp",
   "lua_ls",
