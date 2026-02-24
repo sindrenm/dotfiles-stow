@@ -15,12 +15,13 @@
   padding-right: 24px;
 }
 
-#workspaces,
-#window,
-#pulseaudio,
+#battery,
 #clock,
+#custom-power,
+#pulseaudio,
 #tray,
-#custom-power {
+#window,
+#workspaces {
   margin-top: 16px;
   border: 0px;
   border-radius: 1rem;
@@ -31,8 +32,11 @@
   padding-bottom: 4px;
 }
 
-#workspaces {
+#window {
   margin-left: 16px;
+}
+
+#workspaces {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -64,10 +68,15 @@
   opacity: 0;
 }
 
-#pulseaudio {
-  color: @maroon;
+#battery {
+  color: @sapphire;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 0px;
 }
 
 #clock {

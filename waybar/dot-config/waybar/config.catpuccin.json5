@@ -1,10 +1,11 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["niri/workspaces"],
-  "modules-center": ["niri/window"],
-  "modules-right": ["pulseaudio", "clock", "tray", "custom/power"],
+  "modules-left": ["niri/window"],
+  "modules-center": ["niri/workspaces"],
+  "modules-right": ["battery", "pulseaudio", "clock", "tray", "custom/power"],
   "include": [
+    "./modules/battery.json5",
     "./modules/clock.json5",
     "./modules/custom-power.json5",
     "./modules/niri-window.json5",
