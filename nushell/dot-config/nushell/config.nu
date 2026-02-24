@@ -1,5 +1,6 @@
 use std/util "path add"
 use ~/.config/nushell/functions/from-interrupts.nu *
+use ~/.config/nushell/functions/jj-gh-pr-create.nu *
 
 # Output `jj bookmark list` as a nu table
 def "jj bms" [] {
