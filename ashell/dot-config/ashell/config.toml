@@ -1,0 +1,38 @@
+position = "Top"
+layer=  "Bottom"
+
+[modules]
+left = [ "Updates", "WindowTitle" ]
+center = [ "Workspaces" ]
+right = [ [ "Tray" ], [ "SystemInfo" ], [ "Tempo" ], [ "Privacy", "Settings" ] ]
+
+[tempo]
+clock_format = "%A, %B %d, %H:%M"
+weather_location = { City = "Oslo, Norway" }
+
+[updates]
+check_cmd = "checkupdates; paru -Qua"
+update_cmd = 'kitty --execute bash -c "paru; echo Done - Press enter to exit; read"'
+interval = 3600
+
+[appearance]
+success_color = "#A6E3A1"
+text_color = "#CDD6F4"
+workspace_colors = [ "#FAB387", "#B4BEFE", "#CBA6F7" ]
+
+[appearance.primary_color]
+base = "#FAB387"
+text = "#1E1E2E"
+
+[appearance.danger_color]
+base = "#F38BA8"
+weak = "#F9E2AF"
+
+[appearance.background_color]
+base = "#1E1E2E"
+strong = "#45475A"
+weak = "#313244"
+
+[appearance.secondary_color]
+base = "#11111B"
+strong = "#1B1B25"
