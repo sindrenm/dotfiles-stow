@@ -1,9 +1,12 @@
 vim.lsp.enable({
+  "cssls",
   "hls",
   "hyprls",
   "jsonls",
   "kotlin_lsp",
+  "html",
   "lua_ls",
   "nushell",
   "rust_analyzer",
+  "ts_ls",
 })
