@@ -31,6 +31,7 @@ whichKey.add({
   { "<leader>fb",   mode = "n", telescope.buffers,               desc = "Buffers" },
   { "<leader>fr",   mode = "n", telescope.resume,                desc = "Resume" },
   { "<leader>fs",   mode = "n", telescope.treesitter,            desc = "Treesitter" },
+  { "<leader>fq",   mode = "n", telescope.quickfix,              desc = "Bring quickfix list into Telescope" },
   { "<leader>fvf",  mode = "n", telescope.git_files,             desc = "Git files" },
   { "<leader>fvcw", mode = "n", telescope.git_commits,           desc = "Git commits" },
   { "<leader>fvcb", mode = "n", telescope.git_bcommits,          desc = "Git buffer commits" },
