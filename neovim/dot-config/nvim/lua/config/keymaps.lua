@@ -54,8 +54,6 @@ whichKey.add({
   { "<leader>lgt", mode = "n",               vim.lsp.buf.type_definition,         desc = "Go to type" },
   { "<leader>lgi", mode = "n",               vim.lsp.buf.implementation,          desc = "List implementations" },
   { "<leader>lgr", mode = "n",               vim.lsp.buf.references,              desc = "List references" },
-  { "<leader>lgn", mode = "n",               vim.diagnostic.goto_next,            desc = "Go to next diagnostic" },
-  { "<leader>lgp", mode = "n",               vim.diagnostic.goto_prev,            desc = "Go to previous diagnostic" },
   { "<leader>le",  mode = "n",               vim.diagnostic.open_float,           desc = "Open diagnostic float" },
   { "<leader>lH",  mode = "n",               vim.lsp.buf.document_highlight,      desc = "Document highlight" },
   { "<leader>lS",  mode = "n",               vim.lsp.buf.document_symbol,         desc = "List document symbols" },
