@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 require("plugins.00-specs")
+require("plugins.99-ai")
 require("plugins.99-debugger")
 require("plugins.99-editor")
 require("plugins.99-lsp")

@@ -1,3 +1,4 @@
+local codecompanion = require("codecompanion")
 local dap = require("dap")
 local files = require("mini.files")
 local flash = require("flash")
@@ -108,4 +109,10 @@ whichKey.add({
 whichKey.add({
   -- NOTE: Actual mappings are set through `toggleterm.setup()`.
   { [[<C-\>]], desc = "Toggle terminal" },
+})
+
+whichKey.add({
+  { "<leader>a",  mode = { "v", "n" }, group = "AI Stuff" },
+  { "<leader>ac", mode = { "v", "n" }, codecompanion.chat,       desc = "Open CodeCompanion Chat" },
+  { "<leader>av", mode = "v",          "<cmd>CodeCompanion<cr>", desc = "Replace selected code" },
 })

@@ -30,7 +30,7 @@
       "src": "https://github.com/lalitmee/codecompanion-spinners.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "462924cfcff86a9e054d571df6c911a690aff4ec",
+      "rev": "6c423e4a8cc5e1ece46ab875caf2ffee6412ad60",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "diffview.nvim": {
