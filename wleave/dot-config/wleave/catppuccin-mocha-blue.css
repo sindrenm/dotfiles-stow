@@ -1,0 +1,9 @@
+/* Catppuccin Mocha Blue color palette */
+:root {
+  --color-bg: #1e1e2e;
+  --color-bg-overlay: rgba(30, 30, 46, 0.90);
+  --color-surface: #181825;
+  --color-blue: #89b4fa;
+  --color-text: #cdd6f4;
+  --color-hover: #303242;
+}
