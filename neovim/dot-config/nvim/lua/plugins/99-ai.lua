@@ -1,11 +1,11 @@
 require("codecompanion").setup({
   interactions = {
     chat = {
-      adapter = "anthropic",
+      adapter = "openai",
     },
 
     inline = {
-      adapter = "anthropic",
+      adapter = "openai",
       diff = {
         enabled = true,
       },
@@ -23,11 +23,11 @@ require("codecompanion").setup({
     },
 
     cmd = {
-      adapter = "anthropic",
+      adapter = "openai",
     },
 
     background = {
-      adapter = "anthropic",
+      adapter = "openai",
     },
   },
 
