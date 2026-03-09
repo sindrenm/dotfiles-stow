@@ -9,3 +9,5 @@
 
 # Conventional place to put Git worktrees
 /git-worktrees/
+
+**/.claude/settings.local.json
