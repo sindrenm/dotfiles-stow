@@ -23,3 +23,12 @@ hipatterns.setup({
     hex_color = hipatterns.gen_highlighter.hex_color(),
   },
 })
+
+vim.diagnostic.config({
+  severity_sort = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  virtual_lines = false,
+  virtual_text = { prefix = '!', },
+})
