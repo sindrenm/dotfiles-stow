@@ -1,21 +1,5 @@
 local ts = require("nvim-treesitter")
 
--- Automatically start tree-sitter for all supported languages
-vim.api.nvim_create_autocmd("FileType", {
-  callback = function(args)
-    local bufnr = args.buf
-    local lang = vim.bo[bufnr].filetype
-
-    -- Check if a parser actually exists for this language before starting.
-    -- This prevents errors on unsupported file types.
-    local ok, _ = pcall(vim.treesitter.get_parser, bufnr, lang)
-
-    if ok then
-      vim.treesitter.start(bufnr, lang)
-    end
-  end,
-})
-
 ts.install({
   "css",
   "csv",
@@ -61,4 +45,20 @@ ts.install({
   "xml",
   "xresources",
   "yaml",
+})
+
+vim.api.nvim_create_augroup("TreesitterAutoHighlight", { clear = true })
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = "TreesitterAutoHighlight",
+  pattern = "*",
+  callback = function(args)
+    local bufnr = args.buf
+    local filetype = vim.bo[bufnr].filetype
+    local ok, _ = pcall(vim.treesitter.start, bufnr, filetype)
+
+    if ok then
+      vim.bo[bufnr].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end
+  end,
 })
