@@ -89,6 +89,10 @@
       "rev": "239feb70ed1cfc26e2c91b32590fd63f7b015599",
       "src": "https://github.com/OXY2DEV/markview.nvim"
     },
+    "mcphub.nvim": {
+      "rev": "7cd5db330f41b7bae02b2d6202218a061c3ebc1f",
+      "src": "https://github.com/ravitemer/mcphub.nvim"
+    },
     "mini.ai": {
       "rev": "4b0a6207341d895b6cfe9bcb1e4d3e8607bfe4f4",
       "src": "https://github.com/echasnovski/mini.ai"
