@@ -1,11 +1,8 @@
 use std/util "path add"
-use ~/.config/nushell/functions/from-interrupts.nu *
-use ~/.config/nushell/functions/jj-gh-pr-create.nu *
 
-# Output `jj bookmark list` as a nu table
-def "jj bms" [] {
-  jj bookmark list | lines | parse "{name}: {change_id} {commit_id} {description}"
-}
+use ~/.config/nushell/functions/from-interrupts.nu *
+use ~/.config/nushell/functions/jj-bms.nu *
+use ~/.config/nushell/functions/jj-gh-pr-create.nu *
 
 # Shell aliases
 alias l = eza;
