@@ -6,3 +6,6 @@ name = "catppuccin-mocha-blue"
 [daemon]
 enabled = true
 autostart = true
+
+[ai]
+enabled = true
