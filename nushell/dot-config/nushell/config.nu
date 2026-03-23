@@ -20,3 +20,4 @@ zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.
 atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
 
 path add "~/.cargo/bin"
+path add "~/.local/bin"
