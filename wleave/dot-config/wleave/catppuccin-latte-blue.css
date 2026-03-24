@@ -1,0 +1,34 @@
+/* Catppuccin Latte Blue color palette */
+:root {
+  --color-bg: #eff1f5;
+  --color-bg-overlay: rgba(239, 241, 245, 0.9);
+  --color-surface: #e6e9ef;
+  --color-blue: #1e66f5;
+  --color-text: #4c4f69;
+  --color-hover: #dce0e8;
+  --color-active: #ccd0da;
+}
+
+#lock {
+  background-image: url("./icons/catppuccin/latte/blue/lock.svg");
+}
+
+#logout {
+  background-image: url("./icons/catppuccin/latte/blue/logout.svg");
+}
+
+#suspend {
+  background-image: url("./icons/catppuccin/latte/blue/suspend.svg");
+}
+
+#hibernate {
+  background-image: url("./icons/catppuccin/latte/blue/hibernate.svg");
+}
+
+#shutdown {
+  background-image: url("./icons/catppuccin/latte/blue/shutdown.svg");
+}
+
+#reboot {
+  background-image: url("./icons/catppuccin/latte/blue/reboot.svg");
+}

@@ -1,3 +1,5 @@
+import catppuccin
+
 # NOTE: config.py is intended for advanced users who are comfortable
 # with manually migrating the config file on qutebrowser upgrades. If
 # you prefer, you can also configure qutebrowser using the
@@ -10,6 +12,8 @@
 
 # Change the argument to True to still load settings configured via autoconfig.yml
 config.load_autoconfig(True)
+
+catppuccin.setup(c, 'latte', True)
 
 # Set user agent when signing in to Google, otherwise they complain that
 # “the browser might not be secure”.

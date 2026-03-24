@@ -1,7 +1,7 @@
 search_mode = "daemon-fuzzy"
 
 [theme]
-name = "catppuccin-mocha-blue"
+name = "catppuccin-latte-blue"
 
 [daemon]
 enabled = true

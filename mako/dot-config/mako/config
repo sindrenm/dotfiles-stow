@@ -1,4 +1,4 @@
-include=~/.config/mako/catppuccin-mocha-blue
+include=~/.config/mako/themes/catppuccin-latte-blue
 
 anchor=top-right
 layer=overlay
@@ -33,4 +33,3 @@ default-timeout=0
 ignore-timeout=1
 
 # vim: set filetype=dosini :
-

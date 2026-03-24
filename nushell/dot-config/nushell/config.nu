@@ -1,3 +1,5 @@
+source ./themes/catppuccin/latte.nu
+
 use std/util "path add"
 
 use ~/.config/nushell/functions/from-interrupts.nu *

@@ -3,6 +3,16 @@ local icons = require("mini.icons")
 local indentBlankLine = require("ibl")
 local kittyScrollback = require("kitty-scrollback")
 
+require("catppuccin").setup({
+  flavour = "latte",
+  styles = {
+    comments = { "italic" },
+    conditionals = { "bold" },
+    functions = { "bold" },
+    keywords = { "bold" },
+  },
+})
+
 vim.cmd.colorscheme "catppuccin"
 
 kittyScrollback.setup()
