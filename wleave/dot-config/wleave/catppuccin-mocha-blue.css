@@ -7,3 +7,27 @@
   --color-text: #cdd6f4;
   --color-hover: #303242;
 }
+
+#lock {
+  background-image: url("./icons/catppuccin/mocha/blue/lock.svg");
+}
+
+#logout {
+  background-image: url("./icons/catppuccin/mocha/blue/logout.svg");
+}
+
+#suspend {
+  background-image: url("./icons/catppuccin/mocha/blue/suspend.svg");
+}
+
+#hibernate {
+  background-image: url("./icons/catppuccin/mocha/blue/hibernate.svg");
+}
+
+#shutdown {
+  background-image: url("./icons/catppuccin/mocha/blue/shutdown.svg");
+}
+
+#reboot {
+  background-image: url("./icons/catppuccin/mocha/blue/reboot.svg");
+}

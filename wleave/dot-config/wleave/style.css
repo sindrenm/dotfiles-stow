@@ -50,7 +50,7 @@ button:focus {
 }
 
 button:active {
-  background-color: #232338;
+  background-color: var(--color-active);
   color: var(--color-text);
   box-shadow: none;
   transform: translateY(1px) scale(0.985);
@@ -60,36 +60,12 @@ button:active {
 button span, .keybind, .key {
   position: absolute;
   margin: 20px;
-  background: var(--color-hover, #303242);
-  color: var(--color-blue, #89b4fa);
+  background: var(--color-hover);
+  color: var(--color-blue);
   padding: 0.25em 0.75em;
   border-radius: 999px;
   font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
   font-size: 0.7em;
   pointer-events: none;
-}
-
-#lock {
-  background-image: url("./icons/lock.svg");
-}
-
-#logout {
-  background-image: url("./icons/logout.svg");
-}
-
-#suspend {
-  background-image: url("./icons/suspend.svg");
-}
-
-#hibernate {
-  background-image: url("./icons/hibernate.svg");
-}
-
-#shutdown {
-  background-image: url("./icons/shutdown.svg");
-}
-
-#reboot {
-  background-image: url("./icons/reboot.svg");
 }
