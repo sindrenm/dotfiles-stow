@@ -30,7 +30,7 @@
       "src": "https://github.com/lalitmee/codecompanion-spinners.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "d5551b1aac60e164fb569eba422ea9b65cd2d6f4",
+      "rev": "e010179d64538ce1fd88310d08b4697b356b17c8",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "diffview.nvim": {
@@ -54,7 +54,7 @@
       "src": "https://github.com/LionyxML/gitlineage.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "7c4faa3540d0781a28588cafbd4dd187a28ac6e3",
+      "rev": "0a80125bace82d82847d40bc2c38a22d62c6dc2d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "guess-indent.nvim": {
@@ -94,7 +94,7 @@
       "src": "https://github.com/echasnovski/mini.ai"
     },
     "mini.nvim": {
-      "rev": "59f09943573c5348ca6c88393fa09ce3b66a7818",
+      "rev": "439cdcd6992bc9012efd7d8ed7a7b7a0f1fac32a",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "mini.operators": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/echasnovski/mini.pairs"
     },
     "mini.pick": {
-      "rev": "8f196683edb7e199dc392a5830cced4ba05671db",
+      "rev": "fe079c2bd894a5ee70b62f23d819620ef40c4949",
       "src": "https://github.com/echasnovski/mini.pick"
     },
     "mini.surround": {
@@ -138,7 +138,7 @@
       "src": "https://github.com/igorlfs/nvim-dap-view"
     },
     "nvim-lspconfig": {
-      "rev": "841c6d4139aedb8a3f2baf30cef5327371385b93",
+      "rev": "46204c8fdaa36a9aa3768780450e4bc7a210025f",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -224,7 +224,7 @@
       "src": "https://github.com/folke/twilight.nvim"
     },
     "typst-preview.nvim": {
-      "rev": "a42c86ef1875100c2be92e90a637064efb0eab06",
+      "rev": "5f3068df703a40fa4b8ac1c13a7d18ed78483be9",
       "src": "https://github.com/chomosuke/typst-preview.nvim"
     },
     "vague.nvim": {
@@ -252,7 +252,7 @@
       "src": "https://github.com/folke/which-key.nvim"
     },
     "yazi.nvim": {
-      "rev": "e6c27707807c6561b3f296dc9c264fecd241a6e0",
+      "rev": "22e6d9bb4f4043fe8f003385e0e207a31043ef0e",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     },
     "zen-mode.nvim": {
