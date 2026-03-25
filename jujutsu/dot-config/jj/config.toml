@@ -14,6 +14,8 @@ pager = ":builtin"
 backend = "ssh"
 behavior = "own"
 
+[aliases]
+retrunk = ["rebase", "-d", "trunk()"]
 [remotes.origin]
 auto-track-bookmarks = "glob:*"
 
