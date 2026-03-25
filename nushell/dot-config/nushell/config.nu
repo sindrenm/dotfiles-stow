@@ -5,6 +5,7 @@ use std/util "path add"
 use ~/.config/nushell/functions/from-interrupts.nu *
 use ~/.config/nushell/functions/jj-bms.nu *
 use ~/.config/nushell/functions/jj-gh-pr-create.nu *
+use ~/.config/nushell/functions/theme-pref.nu *
 
 # Shell aliases
 alias l = eza;
