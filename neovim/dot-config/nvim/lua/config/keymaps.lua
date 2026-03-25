@@ -2,6 +2,9 @@ local codecompanion = require("codecompanion")
 local dap = require("dap")
 local files = require("mini.files")
 local flash = require("flash")
+local jj = require("jj.cmd")
+local jjAnnotate = require("jj.annotate")
+local jjDiff = require("jj.diff")
 local smartSplits = require("smart-splits")
 local telescope = require("telescope.builtin")
 local whichKey = require("which-key")
@@ -48,12 +51,61 @@ whichKey.add({
   { "<leader>fld",  mode = "n", telescope.diagnostics,           desc = "Diagnostics" },
 })
 
+local jj_diff_current = function()
+  vim.ui.input({ prompt = "Diff against revision: ", default = "@-" }, function(rev)
+    jjDiff.diff_current({ rev = rev })
+  end)
+end
+
+local jj_tag_create = function()
+  vim.ui.input({ prompt = "Set tag on revision: ", default = "@" }, function(rev)
+    jj.tag_set(rev)
+  end)
+end
+
+local jj_log_all = function()
+  -- Raw `jj` command to bypass `jj.log()` limit.
+  jj.j({ "log", "--no-pager", "-r all()" })
+end
+
+whichKey.add({
+  { "<leader>j",   mode = "n", group = "Jujutsu" },
+  { "<leader>jl",  mode = "n", jj.log,               desc = "Log default revset" },
+  { "<leader>jL",  mode = "n", jj_log_all,           desc = "Log all" },
+  { "<leader>js",  mode = "n", jj.status,            desc = "Status" },
+  { "<leader>jn",  mode = "n", jj.new,               desc = "New" },
+  { "<leader>jc",  mode = "n", jj.commit,            desc = "Commit" },
+  { "<leader>jp",  mode = "n", jj.push,              desc = "Push" },
+  { "<leader>jf",  mode = "n", jj.fetch,             desc = "Fetch" },
+  { "<leader>ju",  mode = "n", jj.undo,              desc = "Undo" },
+  { "<leader>jy",  mode = "n", jj.redo,              desc = "Redo" },
+  { "<leader>jo",  mode = "n", jj.open_pr,           desc = "Open Pull Request" },
+
+  { "<leader>jb",  mode = "n", group = "Bookmarks" },
+  { "<leader>jbc", mode = "n", jj.bookmark_create,   desc = "Create new bookmark" },
+  { "<leader>jbt", mode = "n", jj.bookmark_track,    desc = "Track untracked bookmark" },
+  { "<leader>jbm", mode = "n", jj.bookmark_move,     desc = "Move existing bookmark" },
+  { "<leader>jbf", mode = "n", jj.bookmark_forget,   desc = "Forget local bookmark" },
+  { "<leader>jbd", mode = "n", jj.bookmark_delete,   desc = "Delete existing bookmark" },
+
+  { "<leader>jt",  mode = "n", group = "Tags" },
+  { "<leader>jtc", mode = "n", jj_tag_create,        desc = "Create new tag" },
+  { "<leader>jtp", mode = "n", jj.tag_push,          desc = "Push tag" },
+  { "<leader>jtd", mode = "n", jj.tag_delete,        desc = "Delete existing tag" },
+
+  { "<leader>ja",  mode = "n", group = "Annotations" },
+  { "<leader>jal", mode = "n", jjAnnotate.line,      desc = "Annotate current line" },
+  { "<leader>jaf", mode = "n", jjAnnotate.file,      desc = "Annoate whole file" },
+
+  { "<leader>jd",  mode = "n", jj_diff_current,      desc = "Diff current against revision" },
+})
+
 whichKey.add({
   { "<leader>l",   mode = { "n", "x", "o" }, group = "Language Server" },
   { "<leader>lgD", mode = "n",               vim.lsp.buf.declaration,             desc = "Go to declaration" },
   { "<leader>lgd", mode = "n",               vim.lsp.buf.definition,              desc = "Go to definition" },
-  { "<leader>lgt", mode = "n",               vim.lsp.buf.type_definition,         desc = "Go to type" },
   { "<leader>lgi", mode = "n",               vim.lsp.buf.implementation,          desc = "List implementations" },
+  { "<leader>lgt", mode = "n",               vim.lsp.buf.type_definition,         desc = "Go to type" },
   { "<leader>lgr", mode = "n",               vim.lsp.buf.references,              desc = "List references" },
   { "<leader>le",  mode = "n",               vim.diagnostic.open_float,           desc = "Open diagnostic float" },
   { "<leader>lH",  mode = "n",               vim.lsp.buf.document_highlight,      desc = "Document highlight" },

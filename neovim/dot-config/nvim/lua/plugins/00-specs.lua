@@ -1,6 +1,7 @@
 vim.pack.add({
   { src = "https://github.com/LionyxML/gitlineage.nvim" },
   { src = "https://github.com/MunifTanjim/nui.nvim" },
+  { src = "https://github.com/NicolasGB/jj.nvim" },
   { src = "https://github.com/OXY2DEV/markview.nvim" },
   { src = "https://github.com/akinsho/toggleterm.nvim" },
   { src = "https://github.com/avm99963/vim-jjdescription" },
