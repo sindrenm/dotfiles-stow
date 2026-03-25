@@ -41,6 +41,10 @@
       "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
+    "jira.nvim": {
+      "rev": "854da6815aedf972e1384728c6e7d1d3209d8e8e",
+      "src": "https://github.com/kid-icarus/jira.nvim"
+    },
     "jj.nvim": {
       "rev": "2dbe2c73c599a29e86e4123b42e430828b1f01d9",
       "src": "https://github.com/NicolasGB/jj.nvim"
