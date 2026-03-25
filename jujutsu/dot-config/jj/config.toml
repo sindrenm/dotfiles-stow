@@ -6,7 +6,7 @@ name = "Sindre Moen"
 [ui]
 default-command = "log"
 diff-editor = ":builtin"
-diff-formatter = ["difft", "--color=always", "$left", "$right"]
+diff-formatter = ["difft", "--color", "always", "$left", "$right"]
 editor = "nvim"
 pager = ":builtin"
 
@@ -14,8 +14,14 @@ pager = ":builtin"
 backend = "ssh"
 behavior = "own"
 
+[revset-aliases]
+"closest_bookmark(to)" = "heads(::to & bookmarks())"
+
 [aliases]
 retrunk = ["rebase", "-d", "trunk()"]
+tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@"]
+tug- = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
+
 [remotes.origin]
 auto-track-bookmarks = "glob:*"
 
