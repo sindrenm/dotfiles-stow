@@ -14,9 +14,6 @@ pager = ":builtin"
 backend = "ssh"
 behavior = "own"
 
-[jjj.splash]
-skip = true
-
 [remotes.origin]
 auto-track-bookmarks = "glob:*"
 
