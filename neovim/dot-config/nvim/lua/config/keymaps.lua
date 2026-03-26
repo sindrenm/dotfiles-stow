@@ -2,6 +2,7 @@ local codecompanion = require("codecompanion")
 local dap = require("dap")
 local files = require("mini.files")
 local flash = require("flash")
+local gitsigns = require("gitsigns")
 local jj = require("jj.cmd")
 local jjAnnotate = require("jj.annotate")
 local jjDiff = require("jj.diff")
@@ -13,6 +14,13 @@ whichKey.setup({ preset = "modern" });
 
 whichKey.add({
   { "-", mode = "n", files.open, desc = "Open file picker" },
+})
+
+whichKey.add({
+  { "[H", mode = { "n", "x", "o" }, function() gitsigns.nav_hunk('first') end, desc = "Go to first hunk" },
+  { "]H", mode = { "n", "x", "o" }, function() gitsigns.nav_hunk('last') end,  desc = "Go to last hunk" },
+  { "[h", mode = { "n", "x", "o" }, function() gitsigns.nav_hunk('prev') end,  desc = "Go to previous hunk" },
+  { "]h", mode = { "n", "x", "o" }, function() gitsigns.nav_hunk('next') end,  desc = "Go to next hunk" },
 })
 
 whichKey.add({
