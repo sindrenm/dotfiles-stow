@@ -24,6 +24,27 @@ whichKey.add({
 })
 
 whichKey.add({
+  { "ih", mode = { "x", "o" }, gitsigns.select_hunk, desc = "Select hunk" },
+})
+
+local git_reset_hunk = function()
+  gitsigns.reset_hunk({ vim.fn.line('.'), vim.fn.line('v') })
+end
+
+whichKey.add({
+  { "<leader>g",   mode = { "n", "v" }, group = "Git" },
+  { "<leader>gr",  mode = "n",          gitsigns.reset_hunk,                desc = "Reset hunk" },
+  { "<leader>gr",  mode = "v",          git_reset_hunk,                     desc = "Reset selected lines" },
+  { "<leader>gR",  mode = "n",          gitsigns.reset_buffer,              desc = "Reset buffer" },
+  { "<leader>gp",  mode = "n",          gitsigns.preview_hunk,              desc = "Preview hunk" },
+  { "<leader>gi",  mode = "n",          gitsigns.preview_hunk_inline,       desc = "Preview hunk inline" },
+  { "<leader>gb",  mode = "n",          gitsigns.blame_line,                desc = "Blame line" },
+  { "<leader>gd",  mode = "n",          gitsigns.diffthis,                  desc = "Diff this" },
+  { "<leader>gtb", mode = "n",          gitsigns.toggle_current_line_blame, desc = "Toggle current line blame" },
+  { "<leader>gtw", mode = "n",          gitsigns.toggle_word_diff,          desc = "Toggle word diff" },
+})
+
+whichKey.add({
   { "<A-h>", mode = "n", smartSplits.move_cursor_left },
   { "<A-j>", mode = "n", smartSplits.move_cursor_down },
   { "<A-k>", mode = "n", smartSplits.move_cursor_up },
