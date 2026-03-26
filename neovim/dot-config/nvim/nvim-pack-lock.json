@@ -33,10 +33,6 @@
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
-    "gitlineage.nvim": {
-      "rev": "da795833925aae2e4d0cf75d2529d258bf4fb82c",
-      "src": "https://github.com/LionyxML/gitlineage.nvim"
-    },
     "gitsigns.nvim": {
       "rev": "0a80125bace82d82847d40bc2c38a22d62c6dc2d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
