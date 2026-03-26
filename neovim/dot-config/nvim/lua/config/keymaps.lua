@@ -172,6 +172,13 @@ whichKey.add({
 })
 
 whichKey.add({
+  { "<leader>t",  mode = "n", group = "Tabs" },
+  { "<leader>tn", mode = "n", "<cmd>tabnew<cr>",   desc = "New tab" },
+  { "<leader>tc", mode = "n", "<cmd>tabclose<cr>", desc = "Close tab" },
+  { "<leader>to", mode = "n", "<cmd>tabonly<cr>",  desc = "Close all other tabs" },
+})
+
+whichKey.add({
   { "<leader>a",  mode = { "v", "n" }, group = "AI Stuff" },
   { "<leader>ac", mode = { "v", "n" }, codecompanion.chat,       desc = "Open CodeCompanion Chat" },
   { "<leader>av", mode = "v",          "<cmd>CodeCompanion<cr>", desc = "Replace selected code" },
