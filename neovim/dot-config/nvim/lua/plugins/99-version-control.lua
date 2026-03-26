@@ -1,7 +1,9 @@
 local gitLineage = require("gitlineage")
+local hunk = require("hunk")
 local jj = require("jj")
 
 gitLineage.setup()
+hunk.setup()
 
 jj.setup({
   diff = {

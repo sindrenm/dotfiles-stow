@@ -41,6 +41,10 @@
       "rev": "0a80125bace82d82847d40bc2c38a22d62c6dc2d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "hunk.nvim": {
+      "rev": "a73c34934e87af4f2e615fea3a57ee28b2dceec8",
+      "src": "https://github.com/julienvincent/hunk.nvim"
+    },
     "indent-blankline.nvim": {
       "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
