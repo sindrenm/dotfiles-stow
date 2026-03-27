@@ -8,6 +8,11 @@ local jjAnnotate = require("jj.annotate")
 local jjDiff = require("jj.diff")
 local smartSplits = require("smart-splits")
 local telescope = require("telescope.builtin")
+local telescopeActions = require("telescope.actions")
+local telescopeConf = require("telescope.config").values
+local telescopeFinders = require("telescope.finders")
+local telescopePickers = require("telescope.pickers")
+local telescopeState = require("telescope.actions.state")
 local whichKey = require("which-key")
 
 whichKey.setup({ preset = "modern" });
@@ -51,9 +56,54 @@ whichKey.add({
   { "<A-l>", mode = "n", smartSplits.move_cursor_right },
 })
 
+local pack_delete = function()
+  local inactive = vim.tbl_filter(function(pkg) return not pkg.active end, vim.pack.get())
+
+  if #inactive == 0 then
+    vim.notify("No inactive packages to delete.", vim.log.levels.INFO)
+    return
+  end
+
+  telescopePickers.new({}, {
+    prompt_title = "Delete Inactive Package",
+    finder = telescopeFinders.new_table({
+      results = inactive,
+      entry_maker = function(pkg)
+        return {
+          value = pkg.spec.name,
+          display = pkg.spec.name,
+          ordinal = pkg.spec.name,
+        }
+      end,
+    }),
+    sorter = telescopeConf.generic_sorter({}),
+    attach_mappings = function(prompt_bufnr)
+      telescopeActions.select_default:replace(function()
+        local picker = telescopeState.get_current_picker(prompt_bufnr)
+        local selections = picker:get_multi_selection()
+
+        if #selections == 0 then
+          local entry = telescopeState.get_selected_entry()
+
+          if entry then selections = { entry } end
+        end
+
+        telescopeActions.close(prompt_bufnr)
+
+        if #selections > 0 then
+          vim.pack.del(vim.tbl_map(function(s) return s.value end, selections))
+        end
+      end)
+
+      return true
+    end,
+  }):find()
+end
+
 whichKey.add({
   { "<leader>p",  mode = "n", group = "Packages" },
   { "<leader>pu", mode = "n", vim.pack.update,   desc = "Update packages" },
+  { "<leader>pd", mode = "n", pack_delete,       desc = "Delete inactive package" },
 })
 
 whichKey.add({
