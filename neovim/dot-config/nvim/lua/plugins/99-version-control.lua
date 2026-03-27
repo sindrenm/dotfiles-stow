@@ -12,6 +12,8 @@ jj.setup({
       log = {
         select_next_revision = "]]",
         select_prev_revision = "[[",
+        undo = "u",
+        redo = "<C-r>",
       }
     },
     split = {
