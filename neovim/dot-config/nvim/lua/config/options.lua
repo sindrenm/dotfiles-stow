@@ -24,3 +24,6 @@ vim.opt.inccommand = "split"
 
 -- Allow cursor on non-character lines
 vim.opt.virtualedit = "all"
+
+-- Keep some lines visible above/below the cursor
+vim.opt.scrolloff = 10
