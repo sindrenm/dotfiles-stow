@@ -204,3 +204,9 @@ whichKey.add({
   { "<leader>ac", mode = { "v", "n" }, codecompanion.chat,       desc = "Open CodeCompanion Chat" },
   { "<leader>av", mode = "v",          "<cmd>CodeCompanion<cr>", desc = "Replace selected code" },
 })
+
+whichKey.add({
+  { "<leader><leader>",  mode = "n", group = "Dev" },
+  { "<leader><leader>s", mode = "n", "<cmd>so %<cr>",        desc = "Source current file" },
+  { "<leader><leader>S", mode = "n", "<cmd>so $MYVIMRC<cr>", desc = "Source init.lua" },
+})
