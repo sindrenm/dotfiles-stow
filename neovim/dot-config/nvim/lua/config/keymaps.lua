@@ -207,6 +207,7 @@ whichKey.add({
 
 whichKey.add({
   { "<leader><leader>",  mode = "n", group = "Dev" },
-  { "<leader><leader>s", mode = "n", "<cmd>so %<cr>",        desc = "Source current file" },
-  { "<leader><leader>S", mode = "n", "<cmd>so $MYVIMRC<cr>", desc = "Source init.lua" },
+  { "<leader><leader>s", mode = "n", "<cmd>so %<cr>",                  desc = "Source current file" },
+  { "<leader><leader>S", mode = "n", "<cmd>so $MYVIMRC<cr>",           desc = "Source init.lua" },
+  { "<leader><leader>r", mode = "n", "<cmd>restart normal! <C-o><cr>", desc = "Restart Neovim" },
 })
