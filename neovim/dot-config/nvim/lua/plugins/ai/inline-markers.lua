@@ -75,8 +75,11 @@ local function start_spinner(data)
   end))
 end
 
+local group = vim.api.nvim_create_augroup("CodeCompanionInlineMarkers", { clear = true })
+
 --- Start a spinner when an inline request begins
 vim.api.nvim_create_autocmd("User", {
+  group = group,
   pattern = "CodeCompanionRequestStarted",
   callback = function(args)
     --- @type CodeCompanion.InlineRequestEvent
@@ -90,6 +93,7 @@ vim.api.nvim_create_autocmd("User", {
 
 --- Stop the spinner and clean up extmarks when an inline request finishes
 vim.api.nvim_create_autocmd("User", {
+  group = group,
   pattern = "CodeCompanionRequestFinished",
   callback = function(args)
     --- @type CodeCompanion.InlineRequestEvent
@@ -110,4 +114,3 @@ vim.api.nvim_create_autocmd("User", {
     active_requests[data.id] = nil
   end,
 })
-
