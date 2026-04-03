@@ -1,11 +1,11 @@
 local codecompanion = require("codecompanion")
 local dap = require("dap")
-local files = require("mini.files")
 local flash = require("flash")
 local gitsigns = require("gitsigns")
 local jj = require("jj.cmd")
 local jjAnnotate = require("jj.annotate")
 local jjDiff = require("jj.diff")
+local oil = require("oil")
 local smartSplits = require("smart-splits")
 local telescope = require("telescope.builtin")
 local telescopeActions = require("telescope.actions")
@@ -18,7 +18,7 @@ local whichKey = require("which-key")
 whichKey.setup({ preset = "modern" });
 
 whichKey.add({
-  { "-", mode = "n", files.open, desc = "Open file picker" },
+  { "-", mode = "n", oil.open, desc = "Open file picker" },
 })
 
 whichKey.add({

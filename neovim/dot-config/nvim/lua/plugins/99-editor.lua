@@ -1,7 +1,7 @@
 local blink = require("blink.cmp")
-local files = require("mini.files")
 local flash = require("flash")
 local move = require("mini.move")
+local oil = require("oil")
 local surround = require("mini.surround")
 
 blink.setup({
@@ -13,7 +13,11 @@ blink.setup({
 
 flash.setup()
 
-files.setup()
+oil.setup({
+  delete_to_trash = true,
+  skip_confirm_for_simple_edits = true,
+  columns = { "icon", "permissions", "size" },
+})
 
 move.setup({
   mappings = {

@@ -39,4 +39,5 @@ vim.pack.add({
   { src = "https://github.com/rcarriga/nvim-notify" },
   { src = "https://github.com/saghen/blink.cmp",                            version = "v1.9.1" },
   { src = "https://github.com/sindrets/diffview.nvim" },
+  { src = "https://github.com/stevearc/oil.nvim" },
 })
