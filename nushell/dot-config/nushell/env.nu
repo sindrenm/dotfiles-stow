@@ -1,3 +1,4 @@
+$env.BUN_INSTALL = "~/.local"
 $env.EDITOR = "nvim"
 $env.MANPAGER = "nvim +Man!"
 $env.config.buffer_editor = "nvim"
