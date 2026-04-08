@@ -1,6 +1,6 @@
 local codecompanion = require("codecompanion")
 local dap = require("dap")
-local flash = require("flash")
+local jump = require("jump")
 local gitsigns = require("gitsigns")
 local jj = require("jj.cmd")
 local jjAnnotate = require("jj.annotate")
@@ -200,7 +200,7 @@ whichKey.add({
 })
 
 whichKey.add({
-  { "s", mode = { "n", "x", "o" }, flash.jump, desc = "Flash Jump" },
+  { "s", mode = { "n", "x", "o" }, jump.start, desc = "Jump" },
 })
 
 whichKey.add({

@@ -7,7 +7,6 @@ vim.pack.add({
   { src = "https://github.com/catppuccin/nvim" },
   { src = "https://github.com/chomosuke/typst-preview.nvim" },
   { src = "https://github.com/echasnovski/mini.nvim" },
-  { src = "https://github.com/folke/flash.nvim" },
   { src = "https://github.com/folke/lazydev.nvim" },
   { src = "https://github.com/folke/noice.nvim" },
   { src = "https://github.com/folke/twilight.nvim" },
@@ -40,4 +39,5 @@ vim.pack.add({
   { src = "https://github.com/saghen/blink.cmp",                            version = "v1.9.1" },
   { src = "https://github.com/sindrets/diffview.nvim" },
   { src = "https://github.com/stevearc/oil.nvim" },
+  { src = "https://github.com/yorickpeterse/nvim-jump" },
 })

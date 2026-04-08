@@ -1,5 +1,5 @@
 local blink = require("blink.cmp")
-local flash = require("flash")
+local jump = require("jump")
 local move = require("mini.move")
 local oil = require("oil")
 local surround = require("mini.surround")
@@ -11,7 +11,7 @@ blink.setup({
   sources = { default = { "lsp", "path", "snippets", "buffer" } },
 })
 
-flash.setup()
+jump.setup()
 
 oil.setup({
   delete_to_trash = true,
