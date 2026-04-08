@@ -24,3 +24,4 @@ atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
 
 path add "~/.cargo/bin"
 path add "~/.local/bin"
+path add "~/.pyenv/shims/"
