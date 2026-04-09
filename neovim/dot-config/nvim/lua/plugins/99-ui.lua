@@ -2,12 +2,15 @@ local hipatterns = require("mini.hipatterns")
 local icons = require("mini.icons")
 local indentBlankLine = require("ibl")
 local kittyScrollback = require("kitty-scrollback")
+local ui2 = require("vim._core.ui2")
 
 require("catppuccin").setup({
   flavour = "latte",
+  float = {
+    solid = false,
+    transparent = true,
+  },
   styles = {
-    comments = { "italic" },
-    conditionals = { "bold" },
     functions = { "bold" },
     keywords = { "bold" },
   },
@@ -41,4 +44,14 @@ vim.diagnostic.config({
   update_in_insert = false,
   virtual_lines = false,
   virtual_text = { prefix = '!', },
+})
+
+ui2.enable({
+  enable = true,
+  msg = {
+    targets = "msg", -- or "msg" for floating window
+    cmd = { height = 0.5 },
+    msg = { height = 0.5, timeout = 5000 },
+    pager = { height = 0.5 },
+  },
 })
