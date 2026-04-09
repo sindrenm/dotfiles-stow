@@ -14,6 +14,15 @@ require("catppuccin").setup({
     functions = { "bold" },
     keywords = { "bold" },
   },
+  integrations = {
+    fidget = true,
+    gitsigns = true,
+    indent_blankline = true,
+    markview = true,
+    rainbow_delimiters = true,
+    treesitter_context = true,
+    which_key = true,
+  },
 })
 
 vim.cmd.colorscheme "catppuccin"
