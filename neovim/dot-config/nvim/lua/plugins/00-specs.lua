@@ -1,4 +1,5 @@
 vim.pack.add({
+  { src = "https://github.com/HiPhish/rainbow-delimiters.nvim" },
   { src = "https://github.com/MunifTanjim/nui.nvim" },
   { src = "https://github.com/NicolasGB/jj.nvim" },
   { src = "https://github.com/OXY2DEV/markview.nvim" },
