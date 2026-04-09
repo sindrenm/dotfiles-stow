@@ -1,4 +1,9 @@
-require("lazydev").setup({
+local fidget = require("fidget")
+local lazydev = require("lazydev")
+
+fidget.setup({})
+
+lazydev.setup({
   integrations = {
     lspconfig = false,
   },
