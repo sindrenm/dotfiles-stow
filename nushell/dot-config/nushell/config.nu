@@ -13,6 +13,10 @@ alias ll = eza --long --git --icons;
 alias lt = eza --long --git --icons --tree;
 alias lt2 = eza --long --git --icons --tree --level 2;
 
+path add "~/.cargo/bin"
+path add "~/.local/bin"
+path add "~/.pyenv/shims/"
+
 # Source shell hooks
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
@@ -21,7 +25,4 @@ carapace _carapace nushell | save -f ($nu.data-dir | path join "vendor/autoload/
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
 atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
-
-path add "~/.cargo/bin"
-path add "~/.local/bin"
-path add "~/.pyenv/shims/"
+ha completions nushell | save -f ($nu.data-dir | path join "vendor/autoload/ha.nu")
