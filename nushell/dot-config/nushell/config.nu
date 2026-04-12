@@ -21,8 +21,16 @@ path add "~/.pyenv/shims/"
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 
-carapace _carapace nushell | save -f ($nu.data-dir | path join "vendor/autoload/carapace.nu")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
-atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
-ha completions nushell | save -f ($nu.data-dir | path join "vendor/autoload/ha.nu")
+let shell_hooks = {
+  atuin: { atuin init nu },
+  carapace: { carapace _carapace nushell },
+  ha: { ha completions nushell },
+  starship: { starship init nu },
+  zoxide: { zoxide init nushell },
+}
+
+for hook in ($shell_hooks | transpose name init) {
+  if (which $hook.name | is-not-empty) {
+    do $hook.init | save -f ($nu.data-dir | path join $"vendor/autoload/($hook.name).nu")
+  }
+}
