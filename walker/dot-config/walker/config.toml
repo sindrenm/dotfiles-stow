@@ -1,0 +1,20 @@
+theme = "catppuccin-latte"
+
+[keybinds]
+next = ["ctrl n", "Down"]
+previous = ["ctrl k", "Up"]
+
+[providers]
+default = [
+  "desktopapplications",
+  "runner",
+  "calc",
+  "symbols",
+  "archlinuxpkgs",
+  "websearch",
+]
+empty = ["desktopapplications"]
+
+[[providers.prefixes]]
+prefix = "e "
+provider = "symbols"
