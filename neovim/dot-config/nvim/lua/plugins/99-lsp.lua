@@ -32,12 +32,13 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.enable({
+  "csharp_ls",
   "cssls",
   "hls",
+  "html",
   "hyprls",
   "jsonls",
   "kotlin_lsp",
-  "html",
   "lua_ls",
   "nushell",
   "rust_analyzer",
