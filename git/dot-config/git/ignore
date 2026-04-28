@@ -11,3 +11,4 @@
 /git-worktrees/
 
 **/.claude/settings.local.json
+.codex
